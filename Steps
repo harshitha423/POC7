@@ -1,0 +1,25 @@
+steps to get the properties syntax syntax 
+
+parameterized builds:
+
+go to pipeline
+pipeline script in pipeline:
+go to pipeline syntax generater
+steps sample step properties set job properties
+select this project is parametized
+add paramter
+choice parameter select
+name- branches ni choices ga peduthunnam
+main
+feature-1
+feature-2  ivvali
+
+description select the branch to build 
+generate pipeline script and put that in jenkins script
+
+
+
+build now 1st cheyyali
+next time chesinappudey build with parameters kanipisthay 
+
+e poc main purpose parameters kanipisthey ye parameter tho manam build cheyyali aneydhi.
