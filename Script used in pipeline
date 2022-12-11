@@ -1,0 +1,9 @@
+properties([gitLabConnection(gitLabConnection: '', jobCredentialId: ''), parameters([choice(choices: 'main\nfeature-2\nfeature-3', description: 'select a branch to build now', name: 'branch')])])
+
+node{
+    stage('Scm Checkout'){
+        echo "pulling changes from the branch ${params.branch}"
+        git credentialsId: 'ur credentilas', url: 'your git URL', branch: "${params.branch}"
+    }
+
+}
