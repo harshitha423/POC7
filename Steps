@@ -23,3 +23,15 @@ build now 1st cheyyali
 next time chesinappudey build with parameters kanipisthay 
 
 e poc main purpose parameters kanipisthey ye parameter tho manam build cheyyali aneydhi.
+
+
+
+properties([parameters([choice(choices: ['main\nfeature-2\nfeature-3\nfeature-1'], description: 'select a branch', name: 'branch')])])
+
+node{
+    stage('Scm Checkout'){
+        echo "pulling changes from the branch ${params.branch}"
+        git url: 'https://github.com/harshitha423/POC5', branch: "${params.branch}"
+    }
+
+}
